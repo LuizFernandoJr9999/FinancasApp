@@ -1,18 +1,15 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StatusBar} from 'react-native';
+
+import {NavigationContainer} from '@react-navigation/native';
+
+import Routes from './src/routes/index';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Sujeito Programador</Text>
-    </View>
+    <NavigationContainer>
+      <StatusBar backgroundColor="#F0F4FF" barStyle="dark-content" />
+      <Routes />
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
