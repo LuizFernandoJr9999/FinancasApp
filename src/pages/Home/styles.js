@@ -5,3 +5,7 @@ export const Background = styled.SafeAreaView`
   //background-color: #f0f;
   background-color: #fff;
 `;
+
+export const ListBalance = styled.FlatList`
+  max-height: 190px;
+`;
